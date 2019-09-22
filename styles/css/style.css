@@ -16,57 +16,77 @@ html, body, a, ul {
   list-style-type: none; }
 
 .header {
-  height: 162.1vh;
-  background: url("../scss/figur-1.jpg") no-repeat;
-  background-size: 100%; }
-  .header .navbar {
+  max-width: 2000px;
+  height: 1060px;
+  overflow: hidden; }
+  .header .figur {
+    max-width: 100%;
+    height: 100%;
+    background: url("../scss/figur-1.jpg") no-repeat;
+    background-size: 100%;
+    position: relative; }
+  @media only screen and (max-width: 800px) {
+    .header .figur {
+      background: url("../scss/Musician_IPhone6.jpg") no-repeat;
+      background-size: 100%; } }
+  .header .effect {
+    width: 22%;
+    height: 100%;
+    background: url(../scss/effect.png) no-repeat;
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 14%;
+    left: 38.7%; }
+  @media only screen and (max-width: 800px) {
+    .header .effect {
+      width: 75%;
+      top: 13%;
+      left: 11%; } }
+  .header .nav-desktop {
     background: rgba(229, 230, 230, 0.5);
     width: 100%;
     height: 60px;
     text-align: center;
-    padding-top: 20px; }
-    .header .navbar .navbar-list .navbar-items {
-      display: inline; }
-      .header .navbar .navbar-list .navbar-items .navbar-link {
-        text-transform: uppercase;
-        color: #606060;
-        font-family: dosis;
-        font-size: 1.06rem;
-        padding-right: 2.8rem; }
-      .header .navbar .navbar-list .navbar-items .navbar-link:hover {
-        text-transform: uppercase;
-        color: #606060;
-        font-family: dosis;
-        font-size: 1.06rem;
-        padding-right: 2.8rem;
-        text-decoration: underline; }
-  .header .effect {
-    width: 20.5vw;
-    height: 265px;
-    background: url(../scss/effect.png) no-repeat;
-    background-size: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    top: 156px;
-    left: 529px; }
-
-@media screen and (max-width: 800px) {
-  .navbar {
-    display: none; } }
-@media screen and (max-width: 800px) {
-  .header {
-    height: 162.1vh;
-    background: url("../scss/Musician_IPhone6.jpg") no-repeat;
-    background-size: 100%; } }
-@media screen and (max-width: 800px) {
-  .effect {
-    width: 73.5vw;
-    height: 238px;
-    background: url(../scss/effect.png) no-repeat;
-    background-size: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    top: 38vw;
-    left: 12vw; } }
+    padding-top: 15px; }
+  @media only screen and (max-width: 800px) {
+    .header .nav-desktop {
+      display: none; } }
+  .header .nav-desktop-link {
+    color: #606060;
+    font-family: dosis;
+    font-size: 17px;
+    padding-right: 45px;
+    letter-spacing: 3px; }
+  .header .nav-desktop-link:hover {
+    text-decoration: underline; }
+  .header .dropdown {
+    float: right;
+    position: relative;
+    padding: 20px 35px; }
+    .header .dropdown .dropbtn {
+      width: 30px;
+      height: 30px;
+      cursor: pointer; }
+    @media only screen and (min-width: 1000px) {
+      .header .dropdown .dropbtn {
+        display: none; } }
+    .header .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 140px;
+      overflow: auto;
+      right: 0;
+      z-index: 1; }
+    .header .dropdown .dropdown-content a {
+      color: #606060;
+      padding-top: 20px;
+      font-family: dosis;
+      font-size: 17px;
+      text-decoration: none;
+      display: block;
+      letter-spacing: 3px; }
+    .header .dropdown .show {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */

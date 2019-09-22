@@ -21,76 +21,105 @@ html, body, a, ul {
     list-style-type: none;
 }
 
+//header
 .header {
-    // max-width: 146.4vw; //width: 2000px;
-    height: 162.1vh; //height: 1060px;
-    background: url('../scss/figur-1.jpg') no-repeat;
-    background-size: 100%;
+    max-width: 2000px;
+    height: 1060px;
+    overflow: hidden;
 
-    .navbar {
+    .figur {
+        max-width: 100%;
+        height: 100%;
+        background: url('../scss/figur-1.jpg') no-repeat;
+        background-size: 100%;
+        position: relative;
+    }
+    @media only screen and (max-width: 800px) {
+        .figur {
+            background: url('../scss/Musician_IPhone6.jpg') no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    .effect {
+        width: 22%;
+        height: 100%;
+        background: url(../scss/effect.png) no-repeat;
+        background-size: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        top: 14%;
+        left: 38.7%;
+    }
+    @media only screen and (max-width: 800px) {
+        .effect {
+            width: 75%;
+            top: 13%;
+            left: 11%;
+        }    
+    }
+
+    .nav-desktop {
         background: rgba(229, 230, 230, .5);
         width: 100%;
         height: 60px;
         text-align: center;
-        padding-top: 20px;
-
-        .navbar-list {
-            .navbar-items {
-                display: inline;
-
-                .navbar-link {
-                    text-transform: uppercase;
-                    color: #606060;
-                    font-family: dosis;
-                    font-size: 1.06rem;
-                    padding-right: 2.8rem;
-                }
-                .navbar-link:hover{
-                    text-transform: uppercase;
-                    color: #606060;
-                    font-family: dosis;
-                    font-size: 1.06rem;
-                    padding-right: 2.8rem;
-                    text-decoration: underline; 
-                }
-            }
+        padding-top: 15px;
+    }
+    @media only screen and(max-width: 800px){
+        .nav-desktop {
+            display: none;
         }
     }
-    .effect {
-        width: 20.5vw; //width: 280px;
-        height: 265px;
-        background: url(../scss/effect.png) no-repeat;
-        background-size: 100%;
-        background-color: rgba(255, 255, 255, 0);
-        position: absolute;
-        top: 156px;
-        left: 529px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .navbar {
-        display: none;
 
+    .nav-desktop-link {
+        color: #606060;
+        font-family: dosis;
+        font-size: 17px;
+        padding-right: 45px;
+        letter-spacing: 3px;
     }
-}
-@media screen and (max-width: 800px) {
-    .header {
-    // max-width: 146.4vw; //width: 2000px;
-    height: 162.1vh; //height: 1060px;
-    background: url('../scss/Musician_IPhone6.jpg') no-repeat;
-    background-size: 100%;
+    .nav-desktop-link:hover{
+        text-decoration: underline;
+    }
 
+    .dropdown {
+        float: right;
+        position: relative;
+        padding: 20px 35px;
+
+        .dropbtn {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+        @media only screen and(min-width: 1000px) {
+            .dropbtn {
+                display: none;
+            }
+        } 
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+            overflow: auto;
+            right: 0;
+            z-index: 1;  
+        }
+      
+        .dropdown-content a {
+            color: #606060;
+            padding-top: 20px;
+            font-family: dosis;
+            font-size: 17px;
+            text-decoration: none;
+            display: block;
+            letter-spacing: 3px;
+        }
+        
+        .show {
+            display: block;
+        }
     }
-}
-@media screen and (max-width: 800px) {
-    .effect {
-        width: 73.5vw;
-        height: 238px;
-        background: url(../scss/effect.png) no-repeat;
-        background-size: 100%;
-        background-color: rgba(255, 255, 255, 0);
-        position: absolute;
-        top: 38vw;
-        left: 12vw; 
-    }    
-}
+}  
