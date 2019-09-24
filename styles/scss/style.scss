@@ -165,7 +165,7 @@ html, body, a, ul {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-auto-rows: minmax(100px, auto);
-        margin-top: 11%;
+        margin-top: 10%;
 
         .hell-box-number {
             grid-column: 1/2;
@@ -194,18 +194,25 @@ html, body, a, ul {
 
             @media only screen and(max-width: 800px) {
                 grid-column: 1/4;
-                padding-top: 11%;
             }
 
             .hell-text-h {
                 @include h2-text ($h2FontSize);
                     color: #000;
+
+                @media only screen and(max-width: 800px) {
+                    padding-left: 10px;
+                }    
             }
 
             .hell-text-p {
                 @include p-text($pFontSize);
                     color: #798285;
                     padding: 20px 0;
+
+                    @media only screen and(max-width: 800px) {
+                        padding: 20px;
+                    } 
             }
 
             .button-one {
@@ -258,5 +265,13 @@ html, body, a, ul {
         height: 500px;
         background: url(../scss/discography.jpg) no-repeat;
         background-size: 100%; 
+    }
+
+    hr {
+        width: 31.2rem;
+
+        @media only screen and(max-width: 800px) {
+            width: 20rem;
+        }
     }
 }
