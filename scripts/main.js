@@ -15,3 +15,14 @@ function myFunction() {
       }
     }
   }
+
+//button of myAudio
+var oAudio = document.getElementById('myAudio');
+function playAudio() {  
+  if (oAudio.paused) { 
+      oAudio.play(); 
+  } 
+  else { 
+      oAudio.pause();  
+  } 
+}                
