@@ -39,8 +39,6 @@ $pFontSize: .8rem; //14px
     font-family: openSans;
     font-weight: normal;
     color: #798285;
-    padding-top: 55px;
-    line-height: 25px; 
 }
 
 @mixin number ($pFontSize) {
@@ -168,10 +166,16 @@ html, body, a, ul {
        .discography-title-h {
             @include h1-text ($h1FontSize, $textTransform, $h1Spacing);
                 color: #996c4f;
-       }
+            
+            @media only screen and(max-width: 800px) {
+                letter-spacing: .4rem;
+            } 
+        }
+       
        
        .discography-title-p {
            @include p-text ($pFontSize);
+           padding-top: 3.1rem;
        }
     }
 
@@ -220,13 +224,13 @@ html, body, a, ul {
                 @include p-text($pFontSize);
                     padding: 20px 0;
 
-                    @media only screen and(max-width: 800px) {
-                        padding: 20px;
-                    } 
+                @media only screen and(max-width: 800px) {
+                    padding: 20px;
+                } 
             }
 
             .button-one {
-                width: 200px;
+                width: 11rem;
                 height: 55px;
                 background: url(../scss/button-one.png) no-repeat;
                 background-size: 100%;
@@ -240,7 +244,7 @@ html, body, a, ul {
                 }
             }
             .button-two {
-                width: 200px;
+                width: 11rem;
                 height: 55px;
                 background: url(../scss/button-two.png) no-repeat;
                 background-size: 100%;
@@ -254,7 +258,7 @@ html, body, a, ul {
                 }
             }
             .button-thre {
-                width: 200px;
+                width: 11rem;
                 height: 55px;
                 background: url(../scss/button-thre.png) no-repeat;
                 background-size: 100%;
@@ -272,9 +276,13 @@ html, body, a, ul {
 
     .discography-img {
         grid-column: 1/4;
-        height: 500px;
+        height: 35rem;
         background: url(../scss/discography.jpg) no-repeat;
-        background-size: 100%; 
+        background-size: 100%;
+        
+        @media only screen and(max-width: 800px){
+            height: 11rem;
+        }
     }
 
     hr {
@@ -291,29 +299,47 @@ html, body, a, ul {
     
     .concert-text {
         text-align: center;
-        margin-top: 10%;
 
         .concert-text-h1 {
             @include h1-text($h1FontSize, $textTransform, $h1Spacing);
             color: #75adb0;
+
+            @media only screen and(max-width: 800px) {
+                font-size: 2.5rem;
+                letter-spacing: .4rem;
+            }
         }
+            
         .concert-text-p {
             @include p-text ($pFontSize);
+            padding-top: 3.1rem;
         }
     }
 
     .concert-img {
-        width: 100%;
-        height: 700px;
+        max-width: 100%;
+        height: 700px;//delet
         background: url(../scss/concert.jpg) no-repeat;
         background-size: 100%;
-        padding: 240px 0 0 230px;
+        padding: 14.4rem 0 0 14.4rem;
+
+        @media only screen and(max-width: 800px){
+            background: url(../scss/concert_IPhone6.jpg) no-repeat;
+            background-size: 100%;
+            padding: 9.1rem 0 0 .6rem;
+        }
 
         .concert-img-number {
             @include number ($pFontSize); 
         }
 
-        hr {width: 300px;}
+        hr {
+            max-width: 18.5rem;
+
+            @media only screen and(max-width: 800px) {
+                width: 11.5rem;
+            }
+        }
 
         .concert-img-number-text {
             @include number-text($pFontSize);
@@ -321,12 +347,22 @@ html, body, a, ul {
 
         .concert-img-h2 {
             @include h2-text ($h2FontSize);
-            padding-top: 80px; 
+                padding-top: 3rem;
+
+            @media only screen and(max-width: 800px) {
+                padding-top: 1.9rem;
+            }
         }
 
         .concert-img-p {
             @include p-text($pFontSize);
-            padding-bottom: 30px;
+                font-size: .6rem;
+                padding: 1rem 0 2rem;
+
+            @media only screen and(max-width: 800px) {
+                font-size: .56rem;
+                padding: .63rem 9.3rem 3.9rem 0;
+            }
         }
 
         .concert-button {
@@ -335,7 +371,11 @@ html, body, a, ul {
             font-weight: bold;
             color: #000;
             border: 1px solid #aaaeae;
-            padding: 13px 50px; 
+            padding: 13px 50px;
+            
+            @media only screen and(max-width: 800px) {
+                padding: .5rem 1.5rem;
+            }
         }
     }
 }
