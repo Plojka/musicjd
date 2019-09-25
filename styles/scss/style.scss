@@ -29,13 +29,32 @@ $pFontSize: .8rem; //14px
 }
 
 @mixin h2-text ($h2FontSize) {
-    font-size: $h2FontSize;
+    font-size: $h2FontSize; //23px
     font-family: openSans;
+    font-weight: normal;
 }
 
 @mixin p-text ($pFontSize) {
-    font-size: $pFontSize;
-    font-family: openSans; 
+    font-size: $pFontSize; //14px
+    font-family: openSans;
+    font-weight: normal;
+    color: #798285;
+    padding-top: 55px;
+    line-height: 25px; 
+}
+
+@mixin number ($pFontSize) {
+    font-size: $pFontSize; //14px
+    font-family: openSans;
+    font-weight: bold;
+    color: #798285;
+}
+
+@mixin number-text($pFontSize) {
+    font-size: $pFontSize; //14px
+    font-family: openSans;
+    font-weight: bold;
+    color: #000;
 }
 
 //document
@@ -144,19 +163,15 @@ html, body, a, ul {
 
     .discography-title-box {
         grid-column: 1/4;
+        text-align: center;
 
        .discography-title-h {
             @include h1-text ($h1FontSize, $textTransform, $h1Spacing);
-                text-align: center;
                 color: #996c4f;
        }
        
        .discography-title-p {
-            font-family: openSans;
-            color: #798285;
-            text-align: center;
-            padding-top: 55px;
-            line-height: 25px;
+           @include p-text ($pFontSize);
        }
     }
 
@@ -177,15 +192,11 @@ html, body, a, ul {
             }
 
             .hell-number {
-                @include p-text ($pFontSize);
-                    font-weight: normal;
-                    color: #798285;
+                @include number ($pFontSize);
             }
 
             .hell-number-text {
-                @include p-text ($pFontSize);
-                    font-weight: bold;
-                    color: #000;
+                @include number-text ($pFontSize);
             }
         }
 
@@ -207,7 +218,6 @@ html, body, a, ul {
 
             .hell-text-p {
                 @include p-text($pFontSize);
-                    color: #798285;
                     padding: 20px 0;
 
                     @media only screen and(max-width: 800px) {
@@ -272,6 +282,60 @@ html, body, a, ul {
 
         @media only screen and(max-width: 800px) {
             width: 20rem;
+        }
+    }
+}
+
+//concert-tour
+.concert {
+    
+    .concert-text {
+        text-align: center;
+        margin-top: 10%;
+
+        .concert-text-h1 {
+            @include h1-text($h1FontSize, $textTransform, $h1Spacing);
+            color: #75adb0;
+        }
+        .concert-text-p {
+            @include p-text ($pFontSize);
+        }
+    }
+
+    .concert-img {
+        width: 100%;
+        height: 700px;
+        background: url(../scss/concert.jpg) no-repeat;
+        background-size: 100%;
+        padding: 240px 0 0 230px;
+
+        .concert-img-number {
+            @include number ($pFontSize); 
+        }
+
+        hr {width: 300px;}
+
+        .concert-img-number-text {
+            @include number-text($pFontSize);
+        }
+
+        .concert-img-h2 {
+            @include h2-text ($h2FontSize);
+            padding-top: 80px; 
+        }
+
+        .concert-img-p {
+            @include p-text($pFontSize);
+            padding-bottom: 30px;
+        }
+
+        .concert-button {
+            font-family: openSans;
+            font-size: $pFontSize;
+            font-weight: bold;
+            color: #000;
+            border: 1px solid #aaaeae;
+            padding: 13px 50px; 
         }
     }
 }
