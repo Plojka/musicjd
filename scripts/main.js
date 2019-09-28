@@ -45,4 +45,27 @@ function playAudio_thre() {
   else { 
       oAudio_thre.pause();  
   } 
-} 
+}
+
+// //video 
+// function playPause() {
+//   var myVideo = document.getElementById("video1"); 
+//   if (myVideo.paused) 
+//     myVideo.play(); 
+//   else 
+//     myVideo.pause(); 
+// }
+
+//counter
+// var button = document.getElementById("clickme"),
+//   count = 0;
+// button.onclick = function() {
+//   count += 1;
+//   button.innerHTML = count;
+// };
+
+var count = 0;
+function countClicks() {
+ count = count + 1;
+    document.getElementById("clickme").innerHTML = count;
+}
