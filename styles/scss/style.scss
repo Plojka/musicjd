@@ -327,6 +327,7 @@ html, body, a, ul {
             background: url(../scss/concert_IPhone6.jpg) no-repeat;
             background-size: 100%;
             padding: 9.1rem 0 0 .6rem;
+            height: 500px;
         }
 
         .concert-img-number {
@@ -385,6 +386,10 @@ html, body, a, ul {
     grid-template-columns: repeat(2, 50%);
     grid-auto-rows: minmax(6.3rem, auto);
 
+    @media only screen and(max-width: 800px) {
+        display: initial;           
+    }
+
     .letter-text {
         grid-column: 1/4;
         text-align: center;
@@ -394,8 +399,9 @@ html, body, a, ul {
             color: #000;
 
             @media only screen and(max-width: 800px) {
-                font-size: 2.5rem;
-                letter-spacing: .4rem;
+                font-size: 1.8rem;
+                letter-spacing: .2rem;
+                padding-top: 3rem;
             }
         }
         .letter-text-p {
@@ -411,10 +417,15 @@ html, body, a, ul {
         grid-auto-rows: minmax(6.3rem, auto);
         padding-top: 6rem;
 
+        @media only screen and(max-width: 800px) {
+            display: initial;
+        }
+
         .sam-feldt-text {
             grid-column: 2/3;
             background-color: #f5f6f6;
             padding: 1.9rem 3.7rem 1.9rem 1.9rem;
+            position: relative;
 
             .sam-feldt-number {
                 @include number($pFontSize);
@@ -427,11 +438,19 @@ html, body, a, ul {
             .sam-feldt-text-h2 {
                 @include h2-text ($h2FontSize);
                 padding-top: 3rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: 1rem;
+                }
             }
 
             .sam-feldt-text-p {
                 @include p-text($pFontSize);
                 padding: 1.9rem 0 3.7rem;
+
+                @media only screen and(max-width: 800px) {
+                    font-size: 1rem;
+                }
             }
 
             .sam-feldt-bottom {
@@ -454,6 +473,20 @@ html, body, a, ul {
                     display: inline-block;
                     color: #abacac;
                     padding-right: 1.9rem;
+                }
+            }
+
+            .square {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-color: #f5f6f6;
+                top: 185px;
+                right: -8px;
+                transform: rotate(45deg);
+
+                @media only screen and(max-width: 800px) {
+                    display: none;
                 }
             }
         }
@@ -466,6 +499,7 @@ html, body, a, ul {
             grid-column: 3/4; 
             background-color: #f5f6f6;
             padding: 1.9rem 3.7rem 1.9rem 1.9rem;
+            position: relative;
 
             .sam-feldt-number {
                 @include number($pFontSize);
@@ -507,12 +541,25 @@ html, body, a, ul {
                     padding-right: 1.9rem;
                 }
             }
+
+            .square-right {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-color: #f5f6f6;
+                bottom: 160px;
+                left: -7px;
+                transform: rotate(45deg);
+
+                @media only screen and(max-width: 800px) {
+                    display: none;
+                }
+            }
         }
 
         .sam-feldt-video-left {
             grid-column: 2/3;
         }
-        
     }
     
     hr{width:300px;}

@@ -219,7 +219,8 @@ html, body, a, ul {
     .concert .concert-img {
       background: url(../scss/concert_IPhone6.jpg) no-repeat;
       background-size: 100%;
-      padding: 9.1rem 0 0 .6rem; } }
+      padding: 9.1rem 0 0 .6rem;
+      height: 500px; } }
   .concert .concert-img .concert-img-number {
     font-size: 0.8rem;
     font-family: openSans;
@@ -269,6 +270,9 @@ html, body, a, ul {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: minmax(6.3rem, auto); }
+  @media only screen and (max-width: 800px) {
+    .letter {
+      display: initial; } }
   .letter .letter-text {
     grid-column: 1/4;
     text-align: center; }
@@ -280,8 +284,9 @@ html, body, a, ul {
       color: #000; }
       @media only screen and (max-width: 800px) {
         .letter .letter-text .letter-text-h1 {
-          font-size: 2.5rem;
-          letter-spacing: .4rem; } }
+          font-size: 1.8rem;
+          letter-spacing: .2rem;
+          padding-top: 3rem; } }
     .letter .letter-text .letter-text-p {
       font-size: 0.8rem;
       font-family: openSans;
@@ -294,10 +299,14 @@ html, body, a, ul {
     grid-template-columns: 10% 40% 40% 10%;
     grid-auto-rows: minmax(6.3rem, auto);
     padding-top: 6rem; }
+    @media only screen and (max-width: 800px) {
+      .letter .sam-feldt {
+        display: initial; } }
     .letter .sam-feldt .sam-feldt-text {
       grid-column: 2/3;
       background-color: #f5f6f6;
-      padding: 1.9rem 3.7rem 1.9rem 1.9rem; }
+      padding: 1.9rem 3.7rem 1.9rem 1.9rem;
+      position: relative; }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-number {
         font-size: 0.8rem;
         font-family: openSans;
@@ -313,12 +322,18 @@ html, body, a, ul {
         font-family: openSans;
         font-weight: normal;
         padding-top: 3rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text .sam-feldt-text-h2 {
+            font-size: 1rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-text-p {
         font-size: 0.8rem;
         font-family: openSans;
         font-weight: normal;
         color: #798285;
         padding: 1.9rem 0 3.7rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text .sam-feldt-text-p {
+            font-size: 1rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-bottom {
         font-family: openSans;
         font-size: 0.8rem;
@@ -334,12 +349,24 @@ html, body, a, ul {
           display: inline-block;
           color: #abacac;
           padding-right: 1.9rem; }
+      .letter .sam-feldt .sam-feldt-text .square {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: #f5f6f6;
+        top: 185px;
+        right: -8px;
+        transform: rotate(45deg); }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text .square {
+            display: none; } }
     .letter .sam-feldt .sam-feldt-video {
       grid-column: 3/4; }
     .letter .sam-feldt .sam-feldt-text-right {
       grid-column: 3/4;
       background-color: #f5f6f6;
-      padding: 1.9rem 3.7rem 1.9rem 1.9rem; }
+      padding: 1.9rem 3.7rem 1.9rem 1.9rem;
+      position: relative; }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-number {
         font-size: 0.8rem;
         font-family: openSans;
@@ -376,6 +403,17 @@ html, body, a, ul {
           display: inline-block;
           color: #abacac;
           padding-right: 1.9rem; }
+      .letter .sam-feldt .sam-feldt-text-right .square-right {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: #f5f6f6;
+        bottom: 160px;
+        left: -7px;
+        transform: rotate(45deg); }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text-right .square-right {
+            display: none; } }
     .letter .sam-feldt .sam-feldt-video-left {
       grid-column: 2/3; }
   .letter hr {
