@@ -270,9 +270,6 @@ html, body, a, ul {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: minmax(6.3rem, auto); }
-  @media only screen and (max-width: 800px) {
-    .letter {
-      display: initial; } }
   .letter .letter-text {
     grid-column: 1/4;
     text-align: center; }
@@ -301,12 +298,17 @@ html, body, a, ul {
     padding-top: 6rem; }
     @media only screen and (max-width: 800px) {
       .letter .sam-feldt {
-        display: initial; } }
+        display: initial;
+        padding-top: 3rem;
+        margin: 0 1.2rem; } }
     .letter .sam-feldt .sam-feldt-text {
       grid-column: 2/3;
       background-color: #f5f6f6;
       padding: 1.9rem 3.7rem 1.9rem 1.9rem;
       position: relative; }
+      @media only screen and (max-width: 800px) {
+        .letter .sam-feldt .sam-feldt-text {
+          padding: 1.9rem 1rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-number {
         font-size: 0.8rem;
         font-family: openSans;
@@ -333,7 +335,7 @@ html, body, a, ul {
         padding: 1.9rem 0 3.7rem; }
         @media only screen and (max-width: 800px) {
           .letter .sam-feldt .sam-feldt-text .sam-feldt-text-p {
-            font-size: 1rem; } }
+            font-size: .6rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-bottom {
         font-family: openSans;
         font-size: 0.8rem;
@@ -341,6 +343,9 @@ html, body, a, ul {
         color: #000;
         border: 1px solid #aaaeae;
         padding: .8rem 2.6rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text .sam-feldt-bottom {
+            padding: .5rem 1.1rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box {
         float: right; }
         .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link {
@@ -349,13 +354,16 @@ html, body, a, ul {
           display: inline-block;
           color: #abacac;
           padding-right: 1.9rem; }
+          @media only screen and (max-width: 800px) {
+            .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link-p {
+              padding-right: .6rem; } }
       .letter .sam-feldt .sam-feldt-text .square {
         width: 20px;
         height: 20px;
         position: absolute;
         background-color: #f5f6f6;
-        top: 185px;
-        right: -8px;
+        top: 11.6rem;
+        right: -.5rem;
         transform: rotate(45deg); }
         @media only screen and (max-width: 800px) {
           .letter .sam-feldt .sam-feldt-text .square {
@@ -366,7 +374,12 @@ html, body, a, ul {
       grid-column: 3/4;
       background-color: #f5f6f6;
       padding: 1.9rem 3.7rem 1.9rem 1.9rem;
-      position: relative; }
+      position: relative;
+      order: 2; }
+      @media only screen and (max-width: 800px) {
+        .letter .sam-feldt .sam-feldt-text-right {
+          order: initial;
+          padding: 1.9rem 1rem; } }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-number {
         font-size: 0.8rem;
         font-family: openSans;
@@ -382,12 +395,18 @@ html, body, a, ul {
         font-family: openSans;
         font-weight: normal;
         padding-top: 3rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text-right .sam-feldt-text-h2 {
+            font-size: 1rem; } }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-text-p {
         font-size: 0.8rem;
         font-family: openSans;
         font-weight: normal;
         color: #798285;
         padding: 1.9rem 0 3.7rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text-right .sam-feldt-text-p {
+            font-size: .6rem; } }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-bottom {
         font-family: openSans;
         font-size: 0.8rem;
@@ -395,6 +414,9 @@ html, body, a, ul {
         color: #000;
         border: 1px solid #aaaeae;
         padding: .8rem 2.6rem; }
+        @media only screen and (max-width: 800px) {
+          .letter .sam-feldt .sam-feldt-text-right .sam-feldt-bottom {
+            padding: .5rem 1.1rem; } }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box {
         float: right; }
         .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link {
@@ -403,6 +425,9 @@ html, body, a, ul {
           display: inline-block;
           color: #abacac;
           padding-right: 1.9rem; }
+          @media only screen and (max-width: 800px) {
+            .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link-p {
+              padding-right: .6rem; } }
       .letter .sam-feldt .sam-feldt-text-right .square-right {
         width: 20px;
         height: 20px;
@@ -416,8 +441,14 @@ html, body, a, ul {
             display: none; } }
     .letter .sam-feldt .sam-feldt-video-left {
       grid-column: 2/3; }
+      @media only screen and (max-width: 800px) {
+        .letter .sam-feldt .sam-feldt-video-left {
+          order: 1; } }
   .letter hr {
-    width: 300px; }
+    width: 18.7rem; }
+    @media only screen and (max-width: 800px) {
+      .letter hr {
+        width: 15rem; } }
   .letter video[poster] {
     object-fit: cover; }
 
