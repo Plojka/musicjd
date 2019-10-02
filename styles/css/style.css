@@ -345,7 +345,7 @@ html, body, a, ul {
         padding: .8rem 2.6rem; }
         @media only screen and (max-width: 800px) {
           .letter .sam-feldt .sam-feldt-text .sam-feldt-bottom {
-            padding: .5rem 1.1rem; } }
+            padding: .5rem .8rem; } }
       .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box {
         float: right; }
         .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link {
@@ -416,7 +416,7 @@ html, body, a, ul {
         padding: .8rem 2.6rem; }
         @media only screen and (max-width: 800px) {
           .letter .sam-feldt .sam-feldt-text-right .sam-feldt-bottom {
-            padding: .5rem 1.1rem; } }
+            padding: .5rem .8rem; } }
       .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box {
         float: right; }
         .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link {
