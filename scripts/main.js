@@ -47,25 +47,37 @@ function playAudio_thre() {
   } 
 }
 
-// //video 
-// function playPause() {
-//   var myVideo = document.getElementById("video1"); 
-//   if (myVideo.paused) 
-//     myVideo.play(); 
-//   else 
-//     myVideo.pause(); 
-// }
-
-//counter
-// var button = document.getElementById("clickme"),
-//   count = 0;
-// button.onclick = function() {
-//   count += 1;
-//   button.innerHTML = count;
-// };
-
+//social
 var count = 0;
 function countClicks() {
  count = count + 1;
     document.getElementById("clickme").innerHTML = count;
+}
+
+//slider
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }

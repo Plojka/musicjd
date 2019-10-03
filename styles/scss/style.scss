@@ -481,7 +481,7 @@ html, body, a, ul {
                     padding-right: 1.9rem;
 
                     @media only screen and(max-width: 800px) {
-                        padding-right: .6rem;
+                        padding-right: .5rem;
                     }
                 }
             }
@@ -569,7 +569,7 @@ html, body, a, ul {
                     padding-right: 1.9rem;
 
                     @media only screen and(max-width: 800px) {
-                        padding-right: .6rem;
+                        padding-right: .5rem;
                     }
                 }
             }
@@ -606,4 +606,82 @@ html, body, a, ul {
         }
     }
     video[poster]{object-fit:cover;}
+}
+
+//slider
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: 10rem;
+
+    .text {
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 15rem;
+        width: 100%;
+        text-align: center;
+
+        .slider-text-h1 {
+            @include h2-text ($h2FontSize);
+            color: #fff;
+        }
+
+        .slider-text-p {
+            @include p-text ($pFontSize);
+        }
+
+        .slider-text-p-bottom {
+            @include p-text ($pFontSize);
+        }
+    }
+
+    .slider-dot-box {
+        position: absolute;
+        bottom: 5rem;
+        left: 40rem;
+
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 2px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 95%;
+        width: 30px;
+        height: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        user-select: none;
+        text-align: center;
+    }
+    
+    .next {right: 3%;}
+    
+    .prev:hover, .next:hover {
+      background-color: transparent;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
 }

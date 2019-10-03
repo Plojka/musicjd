@@ -356,7 +356,7 @@ html, body, a, ul {
           padding-right: 1.9rem; }
           @media only screen and (max-width: 800px) {
             .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link-p {
-              padding-right: .6rem; } }
+              padding-right: .5rem; } }
       .letter .sam-feldt .sam-feldt-text .square {
         width: 20px;
         height: 20px;
@@ -427,7 +427,7 @@ html, body, a, ul {
           padding-right: 1.9rem; }
           @media only screen and (max-width: 800px) {
             .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link-p {
-              padding-right: .6rem; } }
+              padding-right: .5rem; } }
       .letter .sam-feldt .sam-feldt-text-right .square-right {
         width: 20px;
         height: 20px;
@@ -451,5 +451,72 @@ html, body, a, ul {
         width: 15rem; } }
   .letter video[poster] {
     object-fit: cover; }
+
+.mySlides {
+  display: none; }
+
+img {
+  vertical-align: middle; }
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin-top: 10rem; }
+  .slideshow-container .text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15rem;
+    width: 100%;
+    text-align: center; }
+    .slideshow-container .text .slider-text-h1 {
+      font-size: 1.4rem;
+      font-family: openSans;
+      font-weight: normal;
+      color: #fff; }
+    .slideshow-container .text .slider-text-p {
+      font-size: 0.8rem;
+      font-family: openSans;
+      font-weight: normal;
+      color: #798285; }
+    .slideshow-container .text .slider-text-p-bottom {
+      font-size: 0.8rem;
+      font-family: openSans;
+      font-weight: normal;
+      color: #798285; }
+  .slideshow-container .slider-dot-box {
+    position: absolute;
+    bottom: 5rem;
+    left: 40rem; }
+    .slideshow-container .slider-dot-box .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease; }
+    .slideshow-container .slider-dot-box .active, .slideshow-container .slider-dot-box .dot:hover {
+      background-color: #717171; }
+  .slideshow-container .prev, .slideshow-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    text-align: center; }
+  .slideshow-container .next {
+    right: 3%; }
+  .slideshow-container .prev:hover, .slideshow-container .next:hover {
+    background-color: transparent; }
+  .slideshow-container .fade {
+    animation-name: fade;
+    animation-duration: 1.5s; }
 
 /*# sourceMappingURL=style.css.map */
