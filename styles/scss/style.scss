@@ -618,7 +618,6 @@ img {vertical-align: middle;}
     margin-top: 10rem;
 
     .text {
-        padding: 8px 12px;
         position: absolute;
         bottom: 15rem;
         width: 100%;
@@ -627,14 +626,28 @@ img {vertical-align: middle;}
         .slider-text-h1 {
             @include h2-text ($h2FontSize);
             color: #fff;
+            text-transform: uppercase;
+
+            @media only screen and(max-width: 800px) {
+                font-size: .7rem;
+                padding: 0 .5rem;
+            }
         }
 
         .slider-text-p {
             @include p-text ($pFontSize);
+
+            @media only screen and(max-width: 800px) {
+                font-size: .5rem;
+            }
         }
 
         .slider-text-p-bottom {
             @include p-text ($pFontSize);
+
+            @media only screen and(max-width: 800px) {
+                font-size: .5rem;
+            }
         }
     }
 
@@ -642,6 +655,10 @@ img {vertical-align: middle;}
         position: absolute;
         bottom: 5rem;
         left: 40rem;
+
+        @media only screen and(max-width: 800px) {
+            left: 10rem;
+        }
 
         .dot {
             cursor: pointer;
@@ -672,6 +689,10 @@ img {vertical-align: middle;}
         transition: 0.6s ease;
         user-select: none;
         text-align: center;
+
+        @media only screen and(max-width: 800px) {
+            display: none;
+        }
     }
     
     .next {right: 3%;}
@@ -681,6 +702,8 @@ img {vertical-align: middle;}
     }
 
     .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
     }
