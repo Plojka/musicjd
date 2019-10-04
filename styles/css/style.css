@@ -131,16 +131,16 @@ html, body, a, ul {
         color: #000; }
         @media only screen and (max-width: 800px) {
           .discography .hell-box .hell-box-text .hell-text-h {
-            padding-left: 10px; } }
+            padding-left: .6rem; } }
       .discography .hell-box .hell-box-text .hell-text-p {
         font-size: 0.8rem;
         font-family: openSans;
         font-weight: normal;
         color: #798285;
-        padding: 20px 0; }
+        padding: 1.25rem 0; }
         @media only screen and (max-width: 800px) {
           .discography .hell-box .hell-box-text .hell-text-p {
-            padding: 20px; } }
+            padding: 1.25rem; } }
       .discography .hell-box .hell-box-text .button-one {
         width: 11rem;
         height: 55px;
@@ -211,7 +211,6 @@ html, body, a, ul {
     padding-top: 3.1rem; }
 .concert .concert-img {
   max-width: 100%;
-  height: 700px;
   background: url(../scss/concert.jpg) no-repeat;
   background-size: 100%;
   padding: 14.4rem 0 0 14.4rem; }
@@ -358,7 +357,7 @@ html, body, a, ul {
           @media only screen and (max-width: 800px) {
             .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link-p {
               padding-right: .5rem;
-              font-size: 0.5rem; } }
+              font-size: .5rem; } }
       .letter .sam-feldt .sam-feldt-text .square {
         width: 20px;
         height: 20px;
@@ -540,5 +539,55 @@ img {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s; }
+
+.new-tracks {
+  height: 1150px;
+  display: grid;
+  grid-template-columns: 10% 80% 10%; }
+  .new-tracks .new-tracks-box {
+    grid-column: 2/3;
+    margin-top: 10.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2.2rem; }
+    @media only screen and (max-width: 800px) {
+      .new-tracks .new-tracks-box {
+        grid-template-columns: none; } }
+    .new-tracks .new-tracks-box .new-tracks-items {
+      height: 26.3rem;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 2.2rem;
+      outline: 1px solid black; }
+      .new-tracks .new-tracks-box .new-tracks-items .new-tracks-number {
+        font-size: 0.8rem;
+        font-family: openSans;
+        font-weight: bold;
+        color: #798285; }
+      .new-tracks .new-tracks-box .new-tracks-items .new-tracks-number-text {
+        font-size: 0.8rem;
+        font-family: openSans;
+        font-weight: bold;
+        color: #000;
+        text-transform: uppercase; }
+      .new-tracks .new-tracks-box .new-tracks-items .new-tracks-h2 {
+        font-size: 1.4rem;
+        font-family: openSans;
+        font-weight: normal;
+        color: #000; }
+        @media only screen and (max-width: 800px) {
+          .new-tracks .new-tracks-box .new-tracks-items .new-tracks-h2 {
+            padding-left: .6rem; } }
+      .new-tracks .new-tracks-box .new-tracks-items .new-tracks-p {
+        font-size: 0.8rem;
+        font-family: openSans;
+        font-weight: normal;
+        color: #798285; }
+      .new-tracks .new-tracks-box .new-tracks-items hr {
+        width: 18rem; }
+        @media only screen and (max-width: 800px) {
+          .new-tracks .new-tracks-box .new-tracks-items hr {
+            width: 15rem; } }
 
 /*# sourceMappingURL=style.css.map */

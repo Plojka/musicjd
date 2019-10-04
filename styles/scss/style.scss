@@ -216,16 +216,16 @@ html, body, a, ul {
                     color: #000;
 
                 @media only screen and(max-width: 800px) {
-                    padding-left: 10px;
+                    padding-left: .6rem;
                 }    
             }
 
             .hell-text-p {
                 @include p-text($pFontSize);
-                    padding: 20px 0;
+                    padding: 1.25rem 0;
 
                 @media only screen and(max-width: 800px) {
-                    padding: 20px;
+                    padding: 1.25rem;
                 } 
             }
 
@@ -318,7 +318,6 @@ html, body, a, ul {
 
     .concert-img {
         max-width: 100%;
-        height: 700px;//delet
         background: url(../scss/concert.jpg) no-repeat;
         background-size: 100%;
         padding: 14.4rem 0 0 14.4rem;
@@ -381,6 +380,7 @@ html, body, a, ul {
     }
 }
 
+//letter composition
 .letter {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -710,5 +710,69 @@ img {vertical-align: middle;}
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
         animation-duration: 1.5s;
+    }
+}
+
+//new track
+.new-tracks {
+    height: 1150px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+
+    .new-tracks-box {
+        // height: 600px;
+        grid-column: 2/3;
+        margin-top: 10.6rem;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 2.2rem;
+
+        @media only screen and(max-width: 800px) {
+            grid-template-columns: none;
+        }
+
+        .new-tracks-items {
+            height: 26.3rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding: 2.2rem;
+            outline: 1px solid black;
+
+            .new-tracks-number {
+                @include number ($pFontSize);
+            }
+
+            .new-tracks-number-text {
+                @include number-text ($pFontSize);
+                text-transform: uppercase;
+            }
+
+            .new-tracks-h2 {
+                @include h2-text ($h2FontSize);
+                    color: #000;
+
+                @media only screen and(max-width: 800px) {
+                    padding-left: .6rem;
+                }
+            }
+
+            .new-tracks-p {
+                @include p-text($pFontSize);
+                    // padding: 1.25rem 0;
+
+                @media only screen and(max-width: 800px) {
+                    // padding: 1.25rem;
+                }
+            }
+
+            hr {
+                width: 18rem;
+
+                @media only screen and(max-width: 800px) {
+                    width: 15rem;
+                }
+            }
+        }
     }
 }
