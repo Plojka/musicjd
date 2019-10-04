@@ -48,10 +48,53 @@ function playAudio_thre() {
 }
 
 //social
-var count = 0;
-function countClicks() {
- count = count + 1;
-    document.getElementById("clickme").innerHTML = count;
+function countClicksOne() {
+   var count = document.getElementById("clickmeOne");
+count.innerText++;
+}
+function countClicksTwo() {
+  var count = document.getElementById("clickmeTwo");
+count.innerText++;
+}
+function countClicksThree() {
+  var count = document.getElementById("clickmeThree");
+count.innerText++;
+}
+function countClicksFour() {
+  var count = document.getElementById("clickmeFour");
+count.innerText++;
+}
+function countClicksFive() {
+  var count = document.getElementById("clickmeFive");
+count.innerText++;
+}
+function countClicksSix() {
+  var count = document.getElementById("clickmeSix");
+count.innerText++;
+}
+function countClicksSeven() {
+  var count = document.getElementById("clickmeSeven");
+count.innerText++;
+}
+function countClicksEight() {
+  var count = document.getElementById("clickmeEight");
+count.innerText++;
+}
+function countClicksNine() {
+  var count = document.getElementById("clickmeNine");
+count.innerText++;
+}
+function countClicksTen() {
+  var count = document.getElementById("clickmeTen");
+count.innerText++;
+}
+function countClicksEleven() {
+  var count = document.getElementById("clickmeEleven");
+count.innerText++;
+}
+function countClicksTwelve() {
+  var count = document.getElementById("clickmeTwelve");
+  count.innerText++;
 }
 
 //slider

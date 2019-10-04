@@ -353,10 +353,12 @@ html, body, a, ul {
         .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link-p {
           display: inline-block;
           color: #abacac;
-          padding-right: 1.9rem; }
+          padding-right: 1.3rem;
+          font-size: .7rem; }
           @media only screen and (max-width: 800px) {
             .letter .sam-feldt .sam-feldt-text .sam-feldt-social-box .sam-feldt-social-link-p {
-              padding-right: .5rem; } }
+              padding-right: .5rem;
+              font-size: 0.5rem; } }
       .letter .sam-feldt .sam-feldt-text .square {
         width: 20px;
         height: 20px;
@@ -424,10 +426,12 @@ html, body, a, ul {
         .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link-p {
           display: inline-block;
           color: #abacac;
-          padding-right: 1.9rem; }
+          padding-right: 1.3rem;
+          font-size: .7rem; }
           @media only screen and (max-width: 800px) {
             .letter .sam-feldt .sam-feldt-text-right .sam-feldt-social-box .sam-feldt-social-link-p {
-              padding-right: .5rem; } }
+              padding-right: .5rem;
+              font-size: .5rem; } }
       .letter .sam-feldt .sam-feldt-text-right .square-right {
         width: 20px;
         height: 20px;

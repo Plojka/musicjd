@@ -478,10 +478,12 @@ html, body, a, ul {
                 .sam-feldt-social-link-p {
                     display: inline-block;
                     color: #abacac;
-                    padding-right: 1.9rem;
+                    padding-right: 1.3rem;
+                    font-size: .7rem;
 
                     @media only screen and(max-width: 800px) {
                         padding-right: .5rem;
+                        font-size: .5rem;
                     }
                 }
             }
@@ -566,10 +568,12 @@ html, body, a, ul {
                 .sam-feldt-social-link-p {
                     display: inline-block;
                     color: #abacac;
-                    padding-right: 1.9rem;
+                    padding-right: 1.3rem;
+                    font-size: .7rem;
 
                     @media only screen and(max-width: 800px) {
                         padding-right: .5rem;
+                        font-size: .5rem;
                     }
                 }
             }
