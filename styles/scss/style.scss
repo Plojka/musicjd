@@ -733,11 +733,11 @@ img {vertical-align: middle;}
         }
 
         .new-tracks-items {
-            height: 26.3rem;
+            // height: 26.3rem;
             background-repeat: no-repeat;
             background-size: 100%;
             padding: 2.2rem;
-            outline: 1px solid black;
+            // outline: 1px solid black;
 
             .new-tracks-number {
                 @include number ($pFontSize);
@@ -746,6 +746,7 @@ img {vertical-align: middle;}
             .new-tracks-number-text {
                 @include number-text ($pFontSize);
                 text-transform: uppercase;
+                color: #fff;
             }
 
             .new-tracks-h2 {

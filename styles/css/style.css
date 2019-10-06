@@ -555,11 +555,9 @@ img {
       .new-tracks .new-tracks-box {
         grid-template-columns: none; } }
     .new-tracks .new-tracks-box .new-tracks-items {
-      height: 26.3rem;
       background-repeat: no-repeat;
       background-size: 100%;
-      padding: 2.2rem;
-      outline: 1px solid black; }
+      padding: 2.2rem; }
       .new-tracks .new-tracks-box .new-tracks-items .new-tracks-number {
         font-size: 0.8rem;
         font-family: openSans;
@@ -570,7 +568,8 @@ img {
         font-family: openSans;
         font-weight: bold;
         color: #000;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: #fff; }
       .new-tracks .new-tracks-box .new-tracks-items .new-tracks-h2 {
         font-size: 1.4rem;
         font-family: openSans;
