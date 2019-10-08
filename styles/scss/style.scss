@@ -715,17 +715,20 @@ img {vertical-align: middle;}
 
 //new track
 .new-tracks {
-    // height: 1150px;
+    // height: 1100px;
     display: grid;
     grid-template-columns: 10% 80% 10%;
 
+    // @media only screen and(max-width: 800px) {
+    //     height: 2500px; //delet
+    // }
+
     .new-tracks-box {
-        height: 25rem;
+        // height: 25rem;
         grid-column: 2/3;
         margin-top: 10.6rem;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        // grid-auto-rows: minmax(100px, auto);
         grid-column-gap: 2.2rem;
 
         @media only screen and(max-width: 800px) {
@@ -734,11 +737,8 @@ img {vertical-align: middle;}
         }
 
         .new-tracks-items {
-            // height: 26.3rem;
             background-repeat: no-repeat;
             background-size: 100%;
-            // padding: 2.2rem;
-            // outline: 1px solid black;
 
             .new-tracks-number {
                 @include number ($pFontSize);
@@ -758,7 +758,6 @@ img {vertical-align: middle;}
                     padding-left: 1.8rem;
 
                 @media only screen and(max-width: 800px) {
-                    // padding-left: .6rem;
                     font-size: 1.1rem;
                 }
             }
@@ -768,7 +767,6 @@ img {vertical-align: middle;}
                     padding-left: 1.8rem;
 
                 @media only screen and(max-width: 800px) {
-                    // padding: 1.25rem;
                     font-size: .6rem;
                     padding-right: 1.5rem;
                 }
@@ -781,6 +779,85 @@ img {vertical-align: middle;}
                     width: 15rem;
                 }
             }
+        }
+    }
+}
+
+//upcoming-events
+.upcoming-events {
+    height: 1171px;
+    background: url(../scss/upcoming-events.jpg) no-repeat;
+    background-size: 90%;
+    margin-top: 9rem;
+
+    @media only screen and(max-width: 800px) {
+        background: url(../scss/upcoming_events_IPhone6.jpg) no-repeat;
+        margin-top: 5rem;
+    }
+
+    .upcoming-events-box {
+        float: right;
+        width: 50%;
+
+        @media only screen and(max-width: 800px) {
+            width: 65%;
+            margin-top: 1rem;
+        }
+
+        .upcoming-events-text-h1 {
+            @include h1-text ($h1FontSize, $textTransform, $h1Spacing);
+            color: #42717e;
+            padding-bottom: 4rem;
+
+            @media only screen and(max-width: 800px) {
+                font-size: 1.4rem;
+                letter-spacing: .2rem;
+            }
+        }
+
+        .upcoming-events-text-h2 {
+            @include h2-text($h2FontSize);
+
+            @media only screen and(max-width: 800px) {
+                font-size: 1rem;
+            }
+        }
+
+        .upcoming-events-text-p {
+            @include p-text($pFontSize);
+            padding-right: 10rem;
+
+            @media only screen and(max-width: 800px) {
+                font-size: .7rem;
+                padding-right: .8rem;
+            }
+        }
+
+        .upcoming-events-number {
+            @include number($pFontSize);
+
+            @media only screen and(max-width: 800px) {
+                font-size: .7rem;
+            }
+        }
+
+        .vl-one {
+            border-right: 1px solid #000;
+            height: 3.4rem;
+            width: 2.2rem;
+            margin: .6rem;
+        }
+
+        .vl-two {
+            border-right: 1px solid #000;
+            height: 9.3rem;
+            width: 2.2rem;
+            margin: .6rem
+        }
+
+        hr {
+            width: 8.4rem;
+            margin: .6rem 0;
         }
     }
 }

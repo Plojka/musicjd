@@ -544,7 +544,6 @@ img {
   display: grid;
   grid-template-columns: 10% 80% 10%; }
   .new-tracks .new-tracks-box {
-    height: 25rem;
     grid-column: 2/3;
     margin-top: 10.6rem;
     display: grid;
@@ -595,5 +594,71 @@ img {
         @media only screen and (max-width: 800px) {
           .new-tracks .new-tracks-box .new-tracks-items hr {
             width: 15rem; } }
+
+.upcoming-events {
+  height: 1171px;
+  background: url(../scss/upcoming-events.jpg) no-repeat;
+  background-size: 90%;
+  margin-top: 9rem; }
+  @media only screen and (max-width: 800px) {
+    .upcoming-events {
+      background: url(../scss/upcoming_events_IPhone6.jpg) no-repeat;
+      margin-top: 5rem; } }
+  .upcoming-events .upcoming-events-box {
+    float: right;
+    width: 50%; }
+    @media only screen and (max-width: 800px) {
+      .upcoming-events .upcoming-events-box {
+        width: 65%;
+        margin-top: 1rem; } }
+    .upcoming-events .upcoming-events-box .upcoming-events-text-h1 {
+      font-size: 3.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      font-family: dosis;
+      color: #42717e;
+      padding-bottom: 4rem; }
+      @media only screen and (max-width: 800px) {
+        .upcoming-events .upcoming-events-box .upcoming-events-text-h1 {
+          font-size: 1.4rem;
+          letter-spacing: .2rem; } }
+    .upcoming-events .upcoming-events-box .upcoming-events-text-h2 {
+      font-size: 1.4rem;
+      font-family: openSans;
+      font-weight: normal; }
+      @media only screen and (max-width: 800px) {
+        .upcoming-events .upcoming-events-box .upcoming-events-text-h2 {
+          font-size: 1rem; } }
+    .upcoming-events .upcoming-events-box .upcoming-events-text-p {
+      font-size: 0.8rem;
+      font-family: openSans;
+      font-weight: normal;
+      color: #798285;
+      padding-right: 10rem; }
+      @media only screen and (max-width: 800px) {
+        .upcoming-events .upcoming-events-box .upcoming-events-text-p {
+          font-size: .7rem;
+          padding-right: .8rem; } }
+    .upcoming-events .upcoming-events-box .upcoming-events-number {
+      font-size: 0.8rem;
+      font-family: openSans;
+      font-weight: bold;
+      color: #798285; }
+      @media only screen and (max-width: 800px) {
+        .upcoming-events .upcoming-events-box .upcoming-events-number {
+          font-size: .7rem; } }
+    .upcoming-events .upcoming-events-box .vl-one {
+      border-right: 1px solid #000;
+      height: 3.4rem;
+      width: 2.2rem;
+      margin: .6rem; }
+    .upcoming-events .upcoming-events-box .vl-two {
+      border-right: 1px solid #000;
+      height: 9.3rem;
+      width: 2.2rem;
+      margin: 0.6rem; }
+    .upcoming-events .upcoming-events-box hr {
+      width: 8.4rem;
+      margin: .6rem 0; }
 
 /*# sourceMappingURL=style.css.map */
