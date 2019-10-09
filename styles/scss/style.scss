@@ -785,7 +785,8 @@ img {vertical-align: middle;}
 
 //upcoming-events
 .upcoming-events {
-    height: 1171px;
+    // height: 1171px;
+    height: 870px;
     background: url(../scss/upcoming-events.jpg) no-repeat;
     background-size: 90%;
     margin-top: 9rem;
@@ -858,6 +859,78 @@ img {vertical-align: middle;}
         hr {
             width: 8.4rem;
             margin: .6rem 0;
+        }
+    }
+}
+
+//history
+.history {
+    height: 1170px;
+
+    .history-img {
+        text-align: center;
+        height: 1170px;
+        background: url(../scss/history.jpg) no-repeat;
+        background-size: 100%;
+
+        .history-text-h1 {
+            @include  h1-text ($h1FontSize, $textTransform, $h1Spacing);
+            padding-bottom: 3.7rem;
+            color: #787977;
+        }
+
+        .history-text-p {
+            @include p-text($pFontSize);
+        }
+
+        .history-text-date-box {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: 19% 19% 19% 19% 19%;
+            grid-auto-rows: minmax(100px, auto);
+            justify-content: center;
+            position: relative;
+
+            .history-text-date-items1{grid-column:1/2;}
+            .history-text-date-items2{grid-column:2/3;}
+            .history-text-date-items3{grid-column:3/4;}
+            .history-text-date-items4{grid-column:4/5;}
+            .history-text-date-items5{grid-column:5/6;}
+
+            .history-text-date {
+                color: #c8c8c8;
+                font-size: 2.1rem;
+                cursor: pointer;
+            }
+
+            .history-text-date:hover {
+                color: #000;
+                transition: 1s;
+            }
+
+            .history-text-date:not(:hover) {
+                transition: 2s;
+            }
+
+            .history-text-date-p {
+                font-size: .2rem;
+                color: #c8c8c8;
+                line-height: 1.1rem;
+                cursor: pointer;
+            }
+
+            .history-text-date-p:hover {
+                font-size: .6rem;
+                color: #c8c8c8;
+                line-height: 1.1rem;
+            }
+
+            .history-hr1{width:5rem;position:absolute;top:1.25rem;left:1%;}
+            .history-hr2{width:5rem;position:absolute;top:1.25rem;left:19%;}
+            .history-hr3{width:5rem;position:absolute;top:1.25rem;left:37%;}
+            .history-hr4{width:5rem;position:absolute;top:1.25rem;left:57%;}
+            .history-hr5{width:5rem;position:absolute;top:1.25rem;left:76%;}
+            .history-hr6{width:5rem;position:absolute;top:1.25rem;left:93%;}
         }
     }
 }

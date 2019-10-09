@@ -602,7 +602,7 @@ img {
             width: 15rem; } }
 
 .upcoming-events {
-  height: 1171px;
+  height: 870px;
   background: url(../scss/upcoming-events.jpg) no-repeat;
   background-size: 90%;
   margin-top: 9rem; }
@@ -666,5 +666,90 @@ img {
     .upcoming-events .upcoming-events-box hr {
       width: 8.4rem;
       margin: .6rem 0; }
+
+.history {
+  height: 1170px; }
+  .history .history-img {
+    text-align: center;
+    height: 1170px;
+    background: url(../scss/history.jpg) no-repeat;
+    background-size: 100%; }
+    .history .history-img .history-text-h1 {
+      font-size: 3.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      font-family: dosis;
+      padding-bottom: 3.7rem;
+      color: #787977; }
+    .history .history-img .history-text-p {
+      font-size: 0.8rem;
+      font-family: openSans;
+      font-weight: normal;
+      color: #798285; }
+    .history .history-img .history-text-date-box {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 19% 19% 19% 19% 19%;
+      grid-auto-rows: minmax(100px, auto);
+      justify-content: center;
+      position: relative; }
+      .history .history-img .history-text-date-box .history-text-date-items1 {
+        grid-column: 1/2; }
+      .history .history-img .history-text-date-box .history-text-date-items2 {
+        grid-column: 2/3; }
+      .history .history-img .history-text-date-box .history-text-date-items3 {
+        grid-column: 3/4; }
+      .history .history-img .history-text-date-box .history-text-date-items4 {
+        grid-column: 4/5; }
+      .history .history-img .history-text-date-box .history-text-date-items5 {
+        grid-column: 5/6; }
+      .history .history-img .history-text-date-box .history-text-date {
+        color: #c8c8c8;
+        font-size: 2.1rem;
+        cursor: pointer; }
+      .history .history-img .history-text-date-box .history-text-date:hover {
+        color: #000;
+        transition: 1s; }
+      .history .history-img .history-text-date-box .history-text-date:not(:hover) {
+        transition: 2s; }
+      .history .history-img .history-text-date-box .history-text-date-p {
+        font-size: .2rem;
+        color: #c8c8c8;
+        line-height: 1.1rem;
+        cursor: pointer; }
+      .history .history-img .history-text-date-box .history-text-date-p:hover {
+        font-size: .6rem;
+        color: #c8c8c8;
+        line-height: 1.1rem; }
+      .history .history-img .history-text-date-box .history-hr1 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 1%; }
+      .history .history-img .history-text-date-box .history-hr2 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 19%; }
+      .history .history-img .history-text-date-box .history-hr3 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 37%; }
+      .history .history-img .history-text-date-box .history-hr4 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 57%; }
+      .history .history-img .history-text-date-box .history-hr5 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 76%; }
+      .history .history-img .history-text-date-box .history-hr6 {
+        width: 5rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 93%; }
 
 /*# sourceMappingURL=style.css.map */
