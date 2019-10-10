@@ -913,16 +913,10 @@ img {vertical-align: middle;}
             }
 
             .history-text-date-p {
-                font-size: .2rem;
-                color: #c8c8c8;
+                font-size: .7rem;
+                color: #000;
                 line-height: 1.1rem;
-                cursor: pointer;
-            }
-
-            .history-text-date-p:hover {
-                font-size: .6rem;
-                color: #c8c8c8;
-                line-height: 1.1rem;
+                display: none;
             }
 
             .history-hr1{width:5rem;position:absolute;top:1.25rem;left:1%;}

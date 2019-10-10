@@ -713,14 +713,10 @@ img {
       .history .history-img .history-text-date-box .history-text-date:not(:hover) {
         transition: 2s; }
       .history .history-img .history-text-date-box .history-text-date-p {
-        font-size: .2rem;
-        color: #c8c8c8;
+        font-size: .7rem;
+        color: #000;
         line-height: 1.1rem;
-        cursor: pointer; }
-      .history .history-img .history-text-date-box .history-text-date-p:hover {
-        font-size: .6rem;
-        color: #c8c8c8;
-        line-height: 1.1rem; }
+        display: none; }
       .history .history-img .history-text-date-box .history-hr1 {
         width: 5rem;
         position: absolute;
