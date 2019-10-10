@@ -785,7 +785,6 @@ img {vertical-align: middle;}
 
 //upcoming-events
 .upcoming-events {
-    // height: 1171px;
     height: 870px;
     background: url(../scss/upcoming-events.jpg) no-repeat;
     background-size: 90%;
@@ -865,22 +864,43 @@ img {vertical-align: middle;}
 
 //history
 .history {
-    height: 1170px;
+    height: 50rem;
+
+    @media only screen and(max-width:800px) {
+        margin-top: 3rem;
+        height: 40rem;
+    }
 
     .history-img {
         text-align: center;
-        height: 1170px;
+        height: 100%;
         background: url(../scss/history.jpg) no-repeat;
         background-size: 100%;
+
+        @media only screen and(max-width: 800px) {
+            background: url(../scss/history_IPhone6.jpg) no-repeat;
+            background-size: 100%;
+        }
 
         .history-text-h1 {
             @include  h1-text ($h1FontSize, $textTransform, $h1Spacing);
             padding-bottom: 3.7rem;
             color: #787977;
+
+            @media only screen and(max-width: 800px) {
+                color: #5b5b5a;
+                font-size: 2rem;
+                padding-bottom: .5rem;
+            }
         }
 
         .history-text-p {
             @include p-text($pFontSize);
+
+            @media only screen and(max-width: 800px) {
+                font-size: .5rem;
+                margin: 0 3rem;
+            }
         }
 
         .history-text-date-box {
@@ -891,11 +911,19 @@ img {vertical-align: middle;}
             justify-content: center;
             position: relative;
 
-            .history-text-date-items1{grid-column:1/2;}
-            .history-text-date-items2{grid-column:2/3;}
+            @media only screen and(max-width: 800px) {
+                margin-top: 1rem;
+            }
+
+            .history-text-date-items1{grid-column:1/2;
+            @media only screen and(max-width:800px){display:none;}}
+            .history-text-date-items2{grid-column:2/3;
+            @media only screen and(max-width:800px){display:none;}}
             .history-text-date-items3{grid-column:3/4;}
-            .history-text-date-items4{grid-column:4/5;}
-            .history-text-date-items5{grid-column:5/6;}
+            .history-text-date-items4{grid-column:4/5;
+            @media only screen and(max-width:800px){display:none;}}
+            .history-text-date-items5{grid-column:5/6;
+            @media only screen and(max-width:800px){display:none;}}
 
             .history-text-date {
                 color: #c8c8c8;
@@ -916,15 +944,41 @@ img {vertical-align: middle;}
                 font-size: .7rem;
                 color: #000;
                 line-height: 1.1rem;
-                display: none;
+                display: none; 
             }
 
-            .history-hr1{width:5rem;position:absolute;top:1.25rem;left:1%;}
-            .history-hr2{width:5rem;position:absolute;top:1.25rem;left:19%;}
-            .history-hr3{width:5rem;position:absolute;top:1.25rem;left:37%;}
-            .history-hr4{width:5rem;position:absolute;top:1.25rem;left:57%;}
-            .history-hr5{width:5rem;position:absolute;top:1.25rem;left:76%;}
-            .history-hr6{width:5rem;position:absolute;top:1.25rem;left:93%;}
+            .history-hr1{width:5rem;position:absolute;top:1.25rem;left:1%;
+            @media only screen and(max-width:800px){display:none;}}
+            .history-hr2{width:5rem;position:absolute;top:1.25rem;left:19%;
+            @media only screen and(max-width:800px){display:none;}}
+            .history-hr3{width:5rem;position:absolute;top:1.25rem;left:37%;
+            @media only screen and(max-width:800px){left:10%;}}
+            .history-hr4{width:5rem;position:absolute;top:1.25rem;left:57%;
+            @media only screen and(max-width:800px){left:68%;}}
+            .history-hr5{width:5rem;position:absolute;top:1.25rem;left:76%;
+            @media only screen and(max-width:800px){display:none;}}
+            .history-hr6{width:5rem;position:absolute;top:1.25rem;left:93%;
+            @media only screen and(max-width:800px){display:none;}}
+        }
+    }
+}
+
+//contact
+.contact {
+    height: 35rem;
+
+    @media only screen and(max-width: 800px) {
+        height: 35rem;
+    }
+
+    .contact-img {
+        height: 100%;
+        background: url(../scss/contact.jpg) no-repeat;
+        background-size: 100%;
+
+        @media only screen and(max-width: 800px) {
+            background: url(../scss/contact_IPhone6.jpg) no-repeat;
+            background-size: 100%; 
         }
     }
 }

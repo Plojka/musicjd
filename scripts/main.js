@@ -1,4 +1,4 @@
-function myFunction() {
+function myFunctionDrop() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
@@ -125,7 +125,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function myFunction() {
+function myFunction1() {
   document.getElementById("panel").style.display = "block";
 }
 function myFunction2() {
