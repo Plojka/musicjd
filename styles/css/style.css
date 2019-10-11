@@ -672,7 +672,7 @@ img {
   @media only screen and (max-width: 800px) {
     .history {
       margin-top: 3rem;
-      height: 40rem; } }
+      height: 31rem; } }
   .history .history-img {
     text-align: center;
     height: 100%;
@@ -799,17 +799,72 @@ img {
             display: none; } }
 
 .contact {
-  height: 36rem; }
+  height: 36.4rem; }
   @media only screen and (max-width: 800px) {
     .contact {
       height: 26.9rem; } }
   .contact .contact-img {
     height: 100%;
     background: url(../scss/contact.jpg) no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    grid-auto-rows: minmax(20px, auto); }
     @media only screen and (max-width: 800px) {
       .contact .contact-img {
         background: url(../scss/contact_IPhone6.jpg) no-repeat;
         background-size: 100%; } }
+    .contact .contact-img .contact-form-box {
+      grid-column: 2/3;
+      grid-row: 2/4; }
+      @media only screen and (max-width: 800px) {
+        .contact .contact-img .contact-form-box {
+          grid-row: 1/4; } }
+      .contact .contact-img .contact-form-box .contact-form-text-h1 {
+        font-size: 3.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.6rem;
+        font-family: dosis;
+        color: #454545;
+        font-size: 2rem; }
+        @media only screen and (max-width: 800px) {
+          .contact .contact-img .contact-form-box .contact-form-text-h1 {
+            font-size: 1.6rem; } }
+      .contact .contact-img .contact-form-box .contact-form-text-p {
+        font-size: 0.8rem;
+        font-family: openSans;
+        font-weight: normal;
+        color: #798285;
+        padding-top: 1rem; }
+        @media only screen and (max-width: 800px) {
+          .contact .contact-img .contact-form-box .contact-form-text-p {
+            font-size: .7rem;
+            display: inline-block;
+            width: 167px;
+            padding-top: .6rem; } }
+      .contact .contact-img .contact-form-box .contact-form-itemlist .contact-form-item {
+        outline: none;
+        border-width: 0 0 1px;
+        border-color: #000;
+        background: none;
+        width: 17rem; }
+      .contact .contact-img .contact-form-box .contact-form-itemlist .contact-form-item::placeholder {
+        font-size: 0.8rem;
+        font-family: openSans;
+        font-weight: normal;
+        color: #798285; }
+      .contact .contact-img .contact-form-box .contact-form-itemlist .contact-form-submit {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-weight: bold; }
+    .contact .contact-img .contact-social-box {
+      grid-column: 3/4;
+      grid-row: 2/4;
+      border-left: 1px solid #000;
+      height: 7.5rem;
+      margin-top: 8.5rem; }
+      .contact .contact-img .contact-social-box .contact-social-li {
+        padding: .9rem 0 0 .9rem; }
 
 /*# sourceMappingURL=style.css.map */

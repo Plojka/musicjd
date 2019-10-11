@@ -140,3 +140,8 @@ function myFunction4() {
 function myFunction5() {
   document.getElementById("panel5").style.display = "block";
 }
+
+//contact
+function myFunction() {
+  document.getElementById("myContactForm").submit();
+}

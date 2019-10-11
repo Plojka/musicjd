@@ -868,7 +868,7 @@ img {vertical-align: middle;}
 
     @media only screen and(max-width:800px) {
         margin-top: 3rem;
-        height: 40rem;
+        height: 31rem;
     }
 
     .history-img {
@@ -965,7 +965,7 @@ img {vertical-align: middle;}
 
 //contact
 .contact {
-    height: 36rem;
+    height: 36.4rem;
 
     @media only screen and(max-width: 800px) {
         height: 26.9rem;
@@ -975,10 +975,82 @@ img {vertical-align: middle;}
         height: 100%;
         background: url(../scss/contact.jpg) no-repeat;
         background-size: 100%;
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+        grid-auto-rows: minmax(20px, auto); 
 
         @media only screen and(max-width: 800px) {
             background: url(../scss/contact_IPhone6.jpg) no-repeat;
             background-size: 100%; 
+        }
+
+        .contact-form-box {
+            grid-column: 2/3;
+            grid-row: 2/4;
+
+            @media only screen and(max-width: 800px){
+                grid-row: 1/4;
+
+            }
+
+            .contact-form-text-h1 {
+                @include h1-text($h1FontSize, $textTransform, $h1Spacing);
+                    color: #454545;
+                    font-size: 2rem; 
+
+                @media only screen and(max-width: 800px){
+                    font-size: 1.6rem;
+
+                }
+            }
+
+            .contact-form-text-p {
+                @include p-text($pFontSize);
+                padding-top: 1rem;
+
+                @media only screen and(max-width: 800px){
+                    font-size: .7rem;
+                    display: inline-block;
+                    width: 167px;
+                    padding-top: .6rem;
+                }
+            }
+
+            .contact-form-itemlist {
+
+                .contact-form-item {
+                    outline: none;
+                    border-width: 0 0 1px;
+                    border-color: #000;
+                    background: none;
+                    width: 17rem;
+                    
+                }
+
+                .contact-form-item::placeholder {
+                    @include p-text($pFontSize);
+                }
+
+                .contact-form-submit {
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                }
+            }
+
+            
+        }
+        .contact-social-box {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            border-left: 1px solid #000;
+            height: 7.5rem;
+            margin-top: 8.5rem;
+
+            .contact-social-li {
+                padding: .9rem 0 0 .9rem;
+            }
         }
     }
 }
