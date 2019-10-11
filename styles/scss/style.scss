@@ -982,25 +982,24 @@ img {vertical-align: middle;}
         @media only screen and(max-width: 800px) {
             background: url(../scss/contact_IPhone6.jpg) no-repeat;
             background-size: 100%; 
+            grid-template-columns: 10% 30% 20%;
         }
 
         .contact-form-box {
             grid-column: 2/3;
             grid-row: 2/4;
 
-            @media only screen and(max-width: 800px){
+            @media only screen and(max-width: 800px) {
                 grid-row: 1/4;
-
             }
 
             .contact-form-text-h1 {
                 @include h1-text($h1FontSize, $textTransform, $h1Spacing);
-                    color: #454545;
-                    font-size: 2rem; 
+                color: #454545;
+                font-size: 2rem; 
 
-                @media only screen and(max-width: 800px){
+                @media only screen and(max-width: 800px) {
                     font-size: 1.6rem;
-
                 }
             }
 
@@ -1008,7 +1007,7 @@ img {vertical-align: middle;}
                 @include p-text($pFontSize);
                 padding-top: 1rem;
 
-                @media only screen and(max-width: 800px){
+                @media only screen and(max-width: 800px) {
                     font-size: .7rem;
                     display: inline-block;
                     width: 167px;
@@ -1024,11 +1023,18 @@ img {vertical-align: middle;}
                     border-color: #000;
                     background: none;
                     width: 17rem;
-                    
+
+                    @media only screen and(max-width: 800px) {
+                        width: 11rem;
+                    }  
                 }
 
                 .contact-form-item::placeholder {
                     @include p-text($pFontSize);
+
+                    @media only screen and(max-width: 800px) {
+                        color: #000; 
+                    }
                 }
 
                 .contact-form-submit {
@@ -1037,16 +1043,21 @@ img {vertical-align: middle;}
                     cursor: pointer;
                     font-weight: bold;
                 }
-            }
-
-            
+            }  
         }
+
         .contact-social-box {
             grid-column: 3/4;
             grid-row: 2/4;
             border-left: 1px solid #000;
             height: 7.5rem;
             margin-top: 8.5rem;
+
+            @media only screen and(max-width: 800px) {
+                grid-column: 5/5;
+                grid-row: 2/3;
+                margin-top: 2rem; 
+            }
 
             .contact-social-li {
                 padding: .9rem 0 0 .9rem;
